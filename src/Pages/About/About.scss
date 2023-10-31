@@ -1,0 +1,90 @@
+.container-style {
+    margin-top: 65px;
+    width: 100%;
+    height: 400px;
+    
+    .slider-style {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .slideStyles {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          
+            
+          }
+          .left-arrow{
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            z-index: 1;
+            cursor: pointer;
+            
+            color: white;
+          
+        }
+        .right-arrow{
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            cursor: pointer;
+            z-index: 1;
+            cursor: pointer;
+            
+            color: white;
+          
+        }
+        // .divider{
+        //     position: absolute;
+        //     top: 0%;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: rgb(81, 127, 144);
+        //     mix-blend-mode: hard-light;
+        // }
+        .title{
+            font-size: 60px;
+            color: white;
+            letter-spacing: 3px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+        }
+       
+      }
+      .dots{
+        display: flex; 
+        justify-content: center;
+        gap: 15px;
+        position: absolute;
+        top: 65%;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        left: 50%;
+
+        .dot{
+         background: rgba(119, 116, 116, 0.727);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        
+       
+           
+        }
+        .Nactive{
+            background: rgba(204, 34, 34, 0.759);
+          
+        }  
+     }
+     
+    
+  }
+  
+  

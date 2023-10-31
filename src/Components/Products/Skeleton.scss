@@ -1,0 +1,59 @@
+.postSk{
+    width: 280px;
+    background: #6f6e6e;
+    margin-right: 20px;
+    height: 400px;
+    opacity: 0.8;
+  
+    .postImgSk{
+        background-color: #535252;
+        width: 280px;
+        height: 180px;
+        animation: sekleton  1s ease infinite alternate;
+    }
+    .postInfoSk{
+        background-color: rgb(91, 88, 88);
+        height: 150px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+
+        .postDetail{
+            background-color: #313131;
+           width: 200px;
+           height: 90px;
+           margin-top: 10px;
+           padding: 10px;
+           animation: sekleton  1s ease infinite alternate;
+            
+           .postBrand{
+            background-color: rgb(72, 72, 72);
+            width: 200px;
+            height: 30px;
+            animation: sekleton  1s ease infinite alternate;
+            
+        }
+        .postPrice{
+            background-color: rgb(72, 72, 72);
+            width: 200px;
+            height: 30px;
+            margin-top: 20px;
+            animation: sekleton  1s ease infinite alternate;
+        }
+        }
+        .postAdd{
+            width: 130px;
+            height: 30px;
+            background: rgb(72, 72, 72);
+            margin-top: 25px;
+            animation: sekleton  1s ease infinite alternate;
+        }
+    }
+    
+}
+@keyframes sekleton {
+    to {
+        opacity: 0.4;
+    }
+}

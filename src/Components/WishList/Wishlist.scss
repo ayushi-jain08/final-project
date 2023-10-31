@@ -1,0 +1,164 @@
+.cart-panel{
+    position: fixed;
+    top: 11%;
+    right: 0;
+    width: 100%;
+    height: 590px;
+    background: rgba(201, 199, 199, 0.2);
+    z-index: 9999;
+ 
+    .opac-layer{
+        background-color: rgba(0,0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        // z-index: 999999;       
+    }
+    .cart-content{
+        float: right;
+        width: 300px;
+        height: 100%;
+        background: white;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        animation: SlideCartWindow 0.3s ease forwards;
+        overflow-y: scroll;
+        
+        .cart-header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px 15px;
+            border: 1px solid rgba(0,0, 0, 0.2) ;
+            text-transform: uppercase;
+
+   .heading{
+    flex-grow: 1;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+   }
+
+   .close-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 600;
+
+    svg{
+        font-size: 18px;
+    }
+    .text{
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    &:hover{
+        opacity: 0.5;
+    }
+   }
+        }
+        .empty-cart{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 17px;
+            margin-top: 100px;
+
+            span{
+                font-weight: 600;
+            }
+            svg{
+                font-size: 120px;
+                opacity: 0.1;
+            }
+            .return-cta{
+                outline: none;
+                border: none;
+                cursor: pointer;
+                padding: 10px 15px;
+                background-color: rgb(11, 5, 53);
+                color: white;
+                font-size: 13px;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        .cart-products{
+            flex-grow: 1;
+
+            .cart-product{
+                padding: 20px 10px;
+                display: flex;
+                gap: 10px;
+                border-bottom: 1px solid rgba(0,0, 0, 0.2);
+
+                .img-container{
+                    width: 60px;
+                    height: 60px;
+                    flex-shrink: 0;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .prod-details{
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+
+                    .name{
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        // overflow: hidden;
+                        font-size: 18px;
+                        line-height: 1;
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                        display: block;
+                        
+                    }
+                    svg{
+                        font-size: 20px;
+                        align-items: center;
+                        position: absolute;
+                         top: 0;
+                         right:5%;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+}
+@keyframes SlideCartWindow {
+    0%{
+        transform: translateX(100%);
+
+    }
+     100%{
+        transform: translateX(0);
+     }
+}
+.clear-all{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding:12px 15px;
+    background-color: rgb(11, 5, 53);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    width: 100%;
+}
